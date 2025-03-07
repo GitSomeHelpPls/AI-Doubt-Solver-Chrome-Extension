@@ -1,0 +1,71 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gemini Problem Solver</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    .status {
+      margin-top: 10px;
+      padding: 8px;
+      border-radius: 4px;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gemini Problem Solver</h1>
+  
+  <div>
+    <label for="api-key">Gemini API Key:</label>
+    <input type="password" id="api-key" placeholder="Enter your Gemini API key">
+    <button id="save-button">Save</button>
+  </div>
+  
+  <div id="status" class="status" style="display: none;"></div>
+  
+  <div style="margin-top: 15px; font-size: 12px;">
+    <p>Set your API key above to use the Gemini Problem Solver on maang.in/problems.</p>
+    <p>To get a Gemini API key, visit the <a href="https://ai.google.dev/" target="_blank">Google AI Developer site</a>.</p>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

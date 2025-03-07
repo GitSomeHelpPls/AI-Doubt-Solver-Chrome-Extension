@@ -1,0 +1,24 @@
+
+{
+    "manifest_version": 3,
+    "name": "Gemini Problem Solver",
+    "version": "1.0",
+    "description": "Uses Gemini API to help solve coding problems on maang.in",
+    "permissions": ["activeTab", "storage", "scripting"],
+    "host_permissions": ["https://maang.in/problems/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://maang.in/problems/*"],
+        "js": ["contentScript.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }

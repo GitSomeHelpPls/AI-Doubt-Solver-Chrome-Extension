@@ -1,0 +1,146 @@
+/* styles.css */
+.gemini-button {
+    background-color: #8e24aa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.2s;
+  }
+  
+  .gemini-button:hover {
+    background-color: #6a1b9a;
+  }
+  
+  .gemini-chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+    overflow: hidden;
+  }
+  
+  .gemini-chatbox.hidden {
+    display: none;
+  }
+  
+  .gemini-header {
+    background-color: #8e24aa;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .gemini-header h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .gemini-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 5px;
+  }
+  
+  .gemini-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .gemini-message {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+  
+  .gemini-message.you {
+    align-self: flex-end;
+    background-color: #e1f5fe;
+  }
+  
+  .gemini-message.gemini {
+    align-self: flex-start;
+    background-color: #f5f5f5;
+  }
+  
+  .gemini-sender {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .gemini-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .gemini-text code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+  }
+  
+  .gemini-text pre {
+    background-color: #f8f8f8;
+    padding: 8px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 8px 0;
+  }
+  
+  .gemini-typing {
+    opacity: 0.7;
+  }
+  
+  .gemini-input-area {
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .gemini-input-area textarea {
+    flex-grow: 1;
+    resize: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: inherit;
+    height: 60px;
+  }
+  
+  .gemini-input-area button {
+    background-color: #8e24aa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .gemini-input-area button:hover {
+    background-color: #6a1b9a;
+  }
